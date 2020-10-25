@@ -19,8 +19,8 @@ import SendIcon from '@material-ui/icons/Send';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import StarBorder from '@material-ui/icons/StarBorder';
-import Nav from './Nav';
-import TopNav from './TopNav';
+import SuperAdminNav from './SuperAdminNav';
+import TopNav from '../TopNav';
 
 const drawerWidth = 240;
 
@@ -63,7 +63,7 @@ export default function ClippedDrawer() {
             
                 <CssBaseline />
 
-                <Nav />
+                <SuperAdminNav />
                 <div className="main">
                     <main className={classes.content}>
 

@@ -51,7 +51,13 @@ class Login extends Component {
 
         //         )
         //return <Redirect to='/SideNav' />
-        this.props.history.push('/Dashbord');
+
+
+        localStorage.setItem('account-type', '1');
+
+
+
+        this.props.history.push('/super-admin-dashboard');
 
     }
 
