@@ -2,18 +2,15 @@ import React from 'react';
 import './index.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Category from './components/Category';
-import { ManageCategory } from './components/ManageCategory';
+import Supplier from './components/Supplier';
 import Login from './components/Login';
 import Nav from './components/Nav';
 import Dashbord from './components/Dashbord';
-import AddCategory from './components/AddCategory';
-import ManageCat from './components/ManageCat';
-
-
-
-
-
+import AddSuppliers from './components/AddSuppliers';
+import ManageSup from './components/ManageSup';
+import Delivery from './components/Delivery';
+import GenReport from './components/GenReport';
+import AddDelivery from './components/AddDelivery';
 function App() {
   return (
     <>
@@ -21,11 +18,13 @@ function App() {
 
         <Switch>
           <Route path='/Dashbord' component={Dashbord} />
-          <Route path='/AddCategory' component={AddCategory} />
-          <Route path='/ManageCategory' component={ManageCat} />
           <Route path='/Nav' component={Nav} />
-
-          <Route path='/Category' component={Category} />
+          <Route path='/AddSuppliers' component={AddSuppliers}/>
+          <Route path='/ManageSuppliers' component={ManageSup}/>
+          <Route path='/AddDelivery' component={AddDelivery}/>
+          <Route path='/GenReport' component={GenReport}/>
+          <Route path='/Supplier' component={Supplier} />
+          <Route path='/Delivery' component={Delivery} />
           <Route path='/' component={Login} />
         </Switch>
       </Router>

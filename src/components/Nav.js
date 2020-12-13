@@ -40,28 +40,16 @@ export default function NestedList() {
                 aria-labelledby="nested-list-subheader"
                 subheader={
                     <ListSubheader component="div" id="nested-list-subheader">
-                        Dashbord
+                        Supplier Management
         </ListSubheader>
                 }
                 className={classes.root}
             >
-                {/* <ListItem button>
-                    <ListItemIcon>
-                        <SendIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="Sent mail" />
-                </ListItem>
-                <ListItem button>
-                    <ListItemIcon>
-                        <DraftsIcon />
-                    </ListItemIcon>
-                    <ListItemText primary="Drafts" />
-                </ListItem> */}
-                <ListItem button onClick={handleClick}>
+             <ListItem button onClick={handleClick}>
                     <ListItemIcon>
                         <InboxIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Category" />
+                    <ListItemText primary="Suppliers" />
                     {open ? <ExpandLess /> : <ExpandMore />}
                 </ListItem>
                 <Collapse in={open} timeout="auto" unmountOnExit>
@@ -70,8 +58,8 @@ export default function NestedList() {
                             <ListItemIcon>
                                 <StarBorder />
                             </ListItemIcon>
-                            <Link href="AddCategory">
-                                Add Category
+                            <Link href="AddSuppliers">
+                                Add Suppliers
                             </Link>
                         </ListItem>
                     </List>
@@ -82,12 +70,35 @@ export default function NestedList() {
                             <ListItemIcon>
                                 <StarBorder />
                             </ListItemIcon>
-                            <Link href="/ManageCategory">
-                                <ListItemText primary="Manage Category" />
+                            <Link href="/ManageSuppliers">
+                                <ListItemText primary="Manage Suppliers" />
                             </Link>
-
-                        </ListItem>
-                    </List>
+                            </ListItem>
+                         </List>
+                </Collapse>
+                <Collapse in={open} timeout="auto" unmountOnExit>
+                    <List component="div" disablePadding>
+                        <ListItem button className={classes.nested}>
+                            <ListItemIcon>
+                                <StarBorder />
+                            </ListItemIcon>
+                            <Link href="AddDelivery">
+                                <ListItemText primary="Delivery Info" />
+                            </Link>
+                            </ListItem>
+                         </List>
+                </Collapse>
+                <Collapse in={open} timeout="auto" unmountOnExit>
+                    <List component="div" disablePadding>
+                        <ListItem button className={classes.nested}>
+                            <ListItemIcon>
+                                <StarBorder />
+                            </ListItemIcon>
+                            <Link href="GenReport">
+                                <ListItemText primary="Print Report" />
+                            </Link>
+                            </ListItem>
+                         </List>
                 </Collapse>
             </List>
         </div>

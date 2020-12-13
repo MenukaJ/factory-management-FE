@@ -20,9 +20,8 @@ import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import StarBorder from '@material-ui/icons/StarBorder';
 import Nav from './Nav';
-import Category from './Category';
+import { ManageSuppliers } from './ManageSuppliers';
 import TopNav from './TopNav';
-
 
 const drawerWidth = 240;
 
@@ -72,7 +71,7 @@ export default function ClippedDrawer() {
                         <Toolbar />
 
                         <Typography paragraph>
-                            <Category />
+                            <ManageSuppliers />
                         </Typography>
 
                     </main>

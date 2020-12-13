@@ -1,0 +1,8 @@
+[1010/153826.553:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Anushka\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\67606c85-3ec4-4820-95a5-d097d52e3357: The system cannot find the path specified. (0x3)
+[1010/153826.555:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1011/081808.529:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1012/122839.449:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1012/130403.159:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1012/195244.836:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1021/203445.879:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1022/220221.147:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
